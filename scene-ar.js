@@ -19,7 +19,7 @@ const renderer = new THREE.WebGLRenderer({ antialise: true, alpha: true });
 function onRender() {
     render();
     // init renderer
-    if (navigator.xr.requestSession('immersive-ar')) {
+    if (navigator.xr) {
         document.body.appendChild( ARButton.createButton( renderer, { requiredFeatures: [ 'hit-test' ] } ) );
       } else {
         alert('WebXR not supported');
