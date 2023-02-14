@@ -12,10 +12,14 @@ const renderer = new THREE.WebGLRenderer({ antialise: true, alpha: true });
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.3);
+    directionalLight.position.set(10, 15, 10);
+    scene.add(directionalLight);
+
 function onRender() {
     render();
     // init renderer
-    if (navigator.xr) {
+    if (navigator.xr.requestSession('immersive-ar')) {
         document.body.appendChild( ARButton.createButton( renderer, { requiredFeatures: [ 'hit-test' ] } ) );
       } else {
         alert('WebXR not supported');
