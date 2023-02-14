@@ -45,6 +45,7 @@ controls.addEventListener('select', onSelect);
 function onSelect(){
     const loader = new GLTFLoader();
     loader.load('models/koala.glb', (gltf) => {
+    gltf.position.setFormatMatrixPosition(reticle.matrix);
     scene.add(gltf.scene);
     }, (error) => {
         console.log(error);
