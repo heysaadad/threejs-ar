@@ -44,8 +44,9 @@ controls.addEventListener('select', onSelect);
 
 function onSelect(){
     const loader = new GLTFLoader();
+    let position = new THREE.Vector3();
     loader.load('models/koala.glb', (gltf) => {
-    gltf.scene.position(reticle.matrix);
+    reticle.matrix.decompose( gltf.scene.position, gltf.scene.quaternion, gltf.scene.scale );
     scene.add(gltf.scene);
     }, (error) => {
         console.log(error);
