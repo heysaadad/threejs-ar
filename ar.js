@@ -22,6 +22,7 @@ let renderer = new THREE.WebGLRenderer({ antialise: true, alpha: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.xr.enabled = true;
+renderer.autoClear = true;
 
 let reticle = new THREE.Mesh(
     new THREE.RingGeometry(0.15, .2, 32).rotateX(-Math.PI / 2),
