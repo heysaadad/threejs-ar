@@ -7,8 +7,9 @@
 
 Tech Stacks: [ Javascript , Three Js Library, WebXR ] <br>
 
-I made this project with Vanilla Js with Three Js and WebXR Api. I put all the functions in one single file **ar.js** <br>
-When I tested the project it worked on my devices well.But when i tested on few other devices i notices it has device compatibility issue. <br>
+This project is made with Typescript, Three Js Library, WebXR. This app renders 3D objects in a AR Environment.
+It has the Hit Point feature implemented which allow users to place the object on selected area. The Scale of the object is defined based on the Hit Point.
+When I tested the project it worked on my devices well.But when i tested on few other devices i noticed it has device compatibility issue. <br>
 
 ### Issues with this app:
 > AR Scene Renderer Doesn't Starts on few devices. <br><br>
