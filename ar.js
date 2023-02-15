@@ -90,5 +90,6 @@ function render(timestamp, frame) {
     //     }
     // })
     renderer.render(scene, camera)
-    reticle.visible = false;
+    reticle.visible = false
+    renderer.clear();
 }
