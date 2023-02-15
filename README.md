@@ -10,6 +10,7 @@ Tech Stacks: [ Javascript , Three Js Library, WebXR ] <br>
 This project is made with Typescript, Three Js Library, WebXR. This app renders 3D objects in a AR Environment.
 It has the Hit Point feature implemented which allow users to place the object on selected area. The Scale of the object is defined based on the Hit Point.
 When I tested the project it worked on my devices well.But when i tested on few other devices i noticed it has device compatibility issue. <br>
+Checkout live from <a href="https://splendid-macaron-946e27.netlify.app/"> here.</a>
 
 ### Issues with this app:
 > AR Scene Renderer Doesn't Starts on few devices. <br><br>
